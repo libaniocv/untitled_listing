@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar</title>
+    {% if registered %}
+        <a>Usuário já registrado</a>
+    {% else %}
+        <form id="user_form" method="post" action="/registrar/" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ user_form.as_p }}
+
+        <input type="submit" name="Registrar" value="Registrar">
+        </form>
+
+    {% endif %}
+
+</head>
+<body>
+
+</body>
+</html>
