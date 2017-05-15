@@ -9,4 +9,5 @@ urlpatterns = patterns('',
 
     url(r'^$', views.index),
     url(r'^registrar/$', views.registrar),
+    url(r'^pesqusiar/t?=(?P<termo>[A-Z a-z]\w+)$', views.pesquisar),
 )

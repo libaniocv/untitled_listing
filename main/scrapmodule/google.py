@@ -19,7 +19,7 @@ def pesquisar_pdf(termo):
 
 """
 results = google_search(
-    'controle de malha aberta filetype:pdf', my_api_key, my_cse_id, num=10)
+    'titulo teste filetype:pdf', my_api_key, my_cse_id, num=10)
 for result in results:
     #pprint.pprint(result)
     titulo=result['title']

@@ -17,3 +17,11 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = models.UserPerfil
         fields = ('foto',)
+
+
+
+
+class AddMatForm(forms.ModelForm):
+    class Meta:
+        model=models.Materiais
+        fields=('titulo','desc','link',)
